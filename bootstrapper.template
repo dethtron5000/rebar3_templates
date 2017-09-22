@@ -1,0 +1,7 @@
+{description, "Makes an boostrap tool for an application."}.
+{variables, [
+    {name, "mylib"},
+    {appdir, ".", "The directory where the application goes"}
+  ]}.
+{dir, "{{appdir}}/src"}.
+{template, "bootstrapper.erl", "{{appdir}}/src/{{name}}.erl"}.

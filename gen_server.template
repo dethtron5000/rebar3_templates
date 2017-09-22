@@ -1,0 +1,7 @@
+{description, "Makes an OTP Gen Server."}.
+{variables, [
+    {name, "mylib"},
+    {appdir, ".", "The directory where the application goes"}
+  ]}.
+{dir, "{{appdir}}/src"}.
+{template, "gen_server.erl", "{{appdir}}/src/{{name}}_server.erl"}.

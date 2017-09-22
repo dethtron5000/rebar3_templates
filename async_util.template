@@ -1,0 +1,7 @@
+{description, "Makes asynchronous method call wrapper template."}.
+{variables, [
+    {name, "mylib"},
+    {appdir, ".", "The directory where the application goes"}
+  ]}.
+{dir, "{{appdir}}/src"}.
+{template, "async_util.erl", "{{appdir}}/src/{{name}}_util.erl"}.
